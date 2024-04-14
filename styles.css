@@ -56,6 +56,8 @@ figure, blockquote, dl, dd {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Set core body defaults */
@@ -282,6 +284,86 @@ p {
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--rose-white);
+    background-color: var(--white);
     color: var(--dark-charcoal);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-block-end: 2rem;
+}
+
+article.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+article.container .title{
+    font-family: 'YoungSerif', serif;
+    font-size: 2rem;
+    margin-block-start: 2rem;
+    margin-block-end: 1.2rem;
+}
+
+article.container .subtitle{
+    font-size: 1rem;
+    color: var(--wenge-brown);
+}
+
+.preparation-time {
+    font-size: 1rem;
+    color: var(--wenge-brown);
+    background-color: var(--rose-white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.preparation-time h2 {
+    font-size: 1.3rem;
+    margin-block-start: 0;
+    color: var(--dark-raspberry);
+}
+
+.preparation-time ul {
+    margin-block-start: 1rem;
+}
+
+.preparation-time ul li {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.preparation-time ul li::before {
+    content: '';
+    background-color: var(--dark-raspberry);
+    display: inline-flex;
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+}
+
+.preparation-time ul li:first-child {
+    margin-block-start: 0;
+}
+
+.preparation-time ul li:last-child {
+    margin-block-end: 0;
+}
+
+
+.preparation-time ul li p {
+    margin: 0;
+    margin-inline-start: .5rem;
+}
+
+.preparation-time ul li p span.name {
+    color: var(--wenge-brown);
+    font-weight: 700;
 }
